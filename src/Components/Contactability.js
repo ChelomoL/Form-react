@@ -127,6 +127,9 @@ const validateSubmit = async (e) => {
             onRequestClose={closeModal}
             contentLabel="Example Modal"
             > <p>Your request has been registered</p>
+            <p>{props.title} {props.firstname} {props.lastname}  </p>
+            <p>  {props.street}   {props.city} {props.country}</p>
+            <p> {email} {phone}</p>
         </Modal>
         </form>
          )}
