@@ -15,7 +15,7 @@ app.get('/hello', (req, res) => {
 });
 
 app.get('/countries', (req, res) => {
-  const countries = ['France', 'Usa','Israel','Germany','Italy'];
+  const countries = ['Choose','France', 'Usa','Israel','Germany','Italy','Mexico','Greece'];
   res.send(countries);
 })
 

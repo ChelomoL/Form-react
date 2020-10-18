@@ -43,7 +43,7 @@ const list = countries.map((c) => {
         <div>
             {step === 1 && (
              <form className="my-form-style">
-                {errorMsg != null && <label style={{color:'red'}}>{errorMsg}</label>}
+                {errorMsg != null && <h1 className="my-error-message">{errorMsg}</h1>}
                 <label style={{backgroundColor:'grey'}}>Personnal</label>
                 <label style={{backgroundColor:'blue'}}> Location</label>
                 <label style={{backgroundColor:'grey'}}> Contactability</label>
@@ -67,7 +67,7 @@ const list = countries.map((c) => {
                     <input type="text" value={street} onChange={e => setStreet(e.target.value)} className="my-input-box" required/>
                 </div>
                     <button onClick={e => validateFormNext(e)} className="my-button-style">Next</button>
-                    <button onClick={e => validateFormPrevious(e)}className="my-button-style">Previous</button>
+                    <button onClick={e => validateFormPrevious(e)}className="my-button-style">Back</button>
                 </form>
             )}
             {step === 2 && <Contactability lastname={props.lastname} firstname={props.firstname} title={props.title} country={country} city={city} street={street} />}

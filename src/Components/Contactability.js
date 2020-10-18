@@ -68,7 +68,7 @@ const validateSubmit = async (e) => {
     console.log(email)
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (isPossiblePhoneNumber(phone) && re.test(email) && optin) {
-        setErrorMsg("Congratulation !!!!!!!")
+        setErrorMsg(null)
         setIsOpen(true);
         const t = await postData()
         console.log(t)
@@ -102,7 +102,7 @@ const validateSubmit = async (e) => {
         <div>
         {step === 2 && (
             <form className="my-form-style">
-                {errorMsg != null && <label style={{color:'red'}}>{errorMsg}</label>}
+                {errorMsg != null && <h1 className="my-error-message" >{errorMsg}</h1>}
                 <label style={{backgroundColor:'grey'}}>Personnal</label>
                 <label style={{backgroundColor:'grey'}}> Location</label>
                 <label style={{backgroundColor:'blue'}}> Contactability</label>
@@ -117,10 +117,10 @@ const validateSubmit = async (e) => {
         </div>
         <label >
             I accept the agreement
-        <input type="checkbox" checked={optin} onChange={e => setOptin(e.target.value)} className="my-input-box"/>
+        <input type="checkbox" checked={optin} onChange={e => setOptin(e.target.value)} />
         </label>
             <button onClick={e => validateSubmit(e)} className="my-button-style">Submit</button>
-            <button onClick={e => validateForm(e)}className="my-button-style">Previous</button> 
+            <button onClick={e => validateForm(e)}className="my-button-style">Back</button> 
         <Modal  className="my-modal-style"
             isOpen={modalIsOpen}  
             style ={customStyles}

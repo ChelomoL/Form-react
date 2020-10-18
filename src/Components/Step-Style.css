@@ -51,6 +51,11 @@
   float : right;
   
 }
+.my-error-message {
+  color: red;
+  height: 200;
+  font-size: 1.25em;
+}
 
 .my-modal-style {
   position: absolute;

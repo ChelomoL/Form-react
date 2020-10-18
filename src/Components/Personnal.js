@@ -24,7 +24,7 @@ const validateForm = (e) => {
         <div>
         {step === 0 && (
             <form className="my-form-style">
-                {errorMsg != null && <label style={{color:'red'}}>{errorMsg}</label>}
+                {errorMsg != null && <h1 className="my-error-message">{errorMsg}</h1>}
                 <label style={{backgroundColor:'blue'}}>Personnal</label>
                 <label style={{backgroundColor:'grey'}}> Location</label>
                 <label style={{backgroundColor:'grey'}}> Contactability</label>
