@@ -1,0 +1,72 @@
+
+.my-form-style {
+    background-color: lightblue;
+    
+    min-width: 44%;
+  height: 350px;
+    font-size: 14pt;
+   
+    right: 0%;
+    z-index: 10;
+    border: 1px solid grey;
+}
+.my-text-style {
+  color: purple;
+  font-size: 25px;
+  font-family: 'Signika', sans-serif;
+  padding-bottom: 10px;
+  font-family: cursive;
+}
+.my-input-box{
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.my-button-style {
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%);
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  /* border-bottom: 4px solid #2b8bc6; */
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  float : right;
+  
+}
+
+.my-modal-style {
+  position: absolute;
+  height: 100px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
